@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -22,13 +22,112 @@
 
 </head>
 
-<body>
-  
-  <header>
-    <nav>
+<body class="md:w-4/5 mx-auto mt-3 md:mt-9">
 
+  <header>
+    <nav class="font-['raleway'] mb-4 md:mb-6">
+      <div class="navbar bg-base-100">
+
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-lg text-[#030712b3]">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="font-extrabold text-2xl md:text-3xl text-[#030712] ">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu-horizontal px-1 gap-11 font-medium text-base text-[#030712b3]">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="btn bg-[#1DD1001a] hover:bg-[#1DD1001a] border-2 border-[#1DD10066] hover:border-[#1DD10066] font-bold text-base text-[#1DD100]">
+            Bus
+            <img src="images/bus-icon.png" alt="hero background">
+          </button>
+        </div>
+
+      </div>
     </nav>
-    <section id="hero-section">
+
+    <!-- Hero Section Start -->
+    <section id="hero-section"
+      class="w-11/12 md:w-full mx-auto h-[50vh] md:h-[75vh] bg-[url('images/banner.png')] bg-no-repeat bg-cover rounded-[26px] bg-center p-4 md:p-0">
+      
+      <div class="h-full flex flex-col justify-center items-center gap-3 md:gap-6">
+        <h1 class="font-['raleway'] font-extrabold text-3xl md:text-5xl text-white md:leading-[68px] text-center">
+          End-to-End Travel
+          with <span class="text-[#1DD100] md:block">P Paribahan</span>
+        </h1>
+
+        <p class="md:w-2/4 mx-auto font-['inter'] text-sm md:text-base text-white text-center">The most important part
+          of any trip is planning because if you plan well, you are sure to enjoy your trip better. And online bus
+          bookings allow you just that.</p>
+        <div>
+          <button
+            class="btn bg-[#1DD100] hover:bg-[#1DD100] font-['raleway'] font-bold text-base text-[#030712] border-none">Buy
+            Tickets</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-5 justify-around items-center md:mt-[-54px] mb-12 mb:mb-24">
+        <div
+          class="font-['inter'] bg-white flex justify-around items-center rounded-[20px] gap-3 p-6 border-b-4 border-[#1DD100] ">
+
+          <div>
+            <img src="images/people.png" alt="people icon">
+          </div>
+
+          <div>
+            <h3 class="font-bold text-2xl text-[#030712]">500K+</h3>
+            <p class="text-sm  text-[#03071299]">Registered users</p>
+          </div>
+
+        </div>
+
+        <div
+          class="font-['inter'] bg-white flex justify-around items-center rounded-[20px] gap-3 p-6 border-b-4 border-[#1DD100] ">
+
+          <div>
+            <img src="images/ticket-coupon.png" alt="ticket coupon icon">
+          </div>
+
+          <div>
+            <h3 class="font-bold text-2xl text-[#030712]">1.7 lacks</h3>
+            <p class="text-sm  text-[#03071299]">Ticke is sold</p>
+          </div>
+
+        </div>
+
+        <div
+          class="font-['inter'] bg-white flex justify-around items-center rounded-[20px] gap-3 p-6 border-b-4 border-[#1DD100] ">
+
+          <div>
+            <img src="images/stoppage.png" alt="stop page icon">
+          </div>
+
+          <div>
+            <h3 class="font-bold text-2xl text-[#030712]">80K+</h3>
+            <p class="text-sm  text-[#03071299]">Rental partners</p>
+          </div>
+
+        </div>
+      </div>
 
     </section>
   </header>
@@ -43,7 +142,7 @@
 
   </footer>
 
-  <script src="scripts/utility.js"></script>
+  <script src=" scripts/utility.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
