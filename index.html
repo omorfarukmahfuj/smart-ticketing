@@ -24,8 +24,11 @@
 
 <body class="md:w-4/5 mx-auto mt-3 md:mt-9">
 
+  <!-- Header Start -->
   <header>
-    <nav class="font-['raleway'] mb-4 md:mb-6">
+
+    <!-- Navbar Start -->
+    <nav class="font-['raleway'] mb-3 md:mb-6">
       <div class="navbar bg-base-100">
 
         <div class="navbar-start">
@@ -66,18 +69,17 @@
     </nav>
 
     <!-- Hero Section Start -->
-    <section id="hero-section"
-      class="w-11/12 md:w-full mx-auto h-[50vh] md:h-[75vh] bg-[url('images/banner.png')] bg-no-repeat bg-cover rounded-[26px] bg-center p-4 md:p-0">
-      
-      <div class="h-full flex flex-col justify-center items-center gap-3 md:gap-6">
+    <section id="hero-section" class="w-11/12 md:w-full mx-auto">
+
+      <div
+        class="h-[50vh] md:h-[75vh] flex flex-col justify-center items-center gap-3 md:gap-6 rounded-[26px] bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center">
         <h1 class="font-['raleway'] font-extrabold text-3xl md:text-5xl text-white md:leading-[68px] text-center">
           End-to-End Travel
           with <span class="text-[#1DD100] md:block">P Paribahan</span>
         </h1>
 
         <p class="md:w-2/4 mx-auto font-['inter'] text-sm md:text-base text-white text-center">The most important part
-          of any trip is planning because if you plan well, you are sure to enjoy your trip better. And online bus
-          bookings allow you just that.</p>
+          of any trip is planning because if you plan well, you are sure to enjoy your trip better.</p>
         <div>
           <button
             class="btn bg-[#1DD100] hover:bg-[#1DD100] font-['raleway'] font-bold text-base text-[#030712] border-none">Buy
@@ -85,7 +87,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row gap-5 justify-around items-center md:mt-[-54px] mb-12 mb:mb-24">
+      <div class="flex flex-col md:flex-row gap-5 justify-around items-center mt-[-54px] mb-9">
         <div
           class="font-['inter'] bg-white flex justify-around items-center rounded-[20px] gap-3 p-6 border-b-4 border-[#1DD100] ">
 
@@ -130,10 +132,49 @@
       </div>
 
     </section>
+
   </header>
 
   <!-- Main Start -->
-  <main>
+  <main class="mt-10 md:mt-24">
+
+    <!-- Coupon Section Start -->
+    <section>
+      <h2 class="font-['raleway'] font-bold text-3xl text-center text-[#030712] mb-10">Best offers for you</h2>
+      <!-- Coupon Contaier -->
+      <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-5">
+        <div class="bg-[#FFBF0F] flex justify-center items-center flex-grow rounded-[20px] px-2">
+          <div class="font-'inter">
+            <p class="font-black text-3xl text-[#030712cc]">15% OFF</p>
+            <p class="font-semibold text-base text-[#030712cc]">on your next purchase</p>
+            <p class="font-medium text-sm text-[#03071280]">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" alt="">
+          <div class="font-['raleway']">
+            <p class="font-bold text-2xl text-[#030712]">NEW15</p>
+            <p class="font-medium text-base text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+
+        <div class="bg-[#F78C9C] flex justify-center items-center flex-grow rounded-[20px] px-2">
+          <div class="font-'inter">
+            <p class="font-black text-3xl text-[#030712cc]">20% OFF</p>
+            <p class="font-semibold text-base text-[#030712cc]">on your next purchase</p>
+            <p class="font-medium text-sm text-[#03071280]">use by January 2024</p>
+          </div>
+          <img src="images/cupon-devider.png" alt="">
+          <div class="font-['raleway']">
+            <p class="font-bold text-2xl text-[#030712]">Couple 20</p>
+            <p class="font-medium text-base text-[#03071266]">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <button
+          class="btn btn-outline mt-12 border-2 hover:bg-transparent border-[#1DD100] hover:border-[#1DD100] text-[#1DD100]  hover:text-[#1DD100] font-['raleway'] font-bold text-base mb-24">See All Offers</button>
+      </div>
+    </section>
 
   </main>
 
